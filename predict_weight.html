@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+
+  <body style="background-color:powderblue;">
+  <h1 style="font-family:verdana;">Predict Patient Weight</h1>
+  <div style="padding:20px;">
+  <label for="Bp"><b>Enter Blood Pressure <small>(in mmHg)</small>:</b> </label>
+  <input type="text" id="bpId" name="BloodPressure" value="120"><br>
+  </div>
+  <div style="padding:20px;">
+  <label for="Ot"><b>Enter Oral Temperature <small>(in celcius):</small></b> </label>
+  <input type="text" Id="otId" name="Oraltemp" value="00"><br>
+  </div>
+  <div style="padding:20px;">
+  <label for="Bh"><b>Enter Height <small>(in cm):</small></b> </label>
+  <input type="text" id="bhId" name="BodyHeight" value="00"><br>
+  </div>
+  <div style="padding:20px;">
+  <label for="Tr"><b>Enter Triglycerides <small>(in mg/dL):</small></b> </label>
+  <input type="text" id="triId" name="Trigly" value="00"><br>
+  </div>
+  <div style="padding:20px;">
+  <label for="Hdl"><b>Enter HDL <small>(in mg/dL):</small></b> </label>
+  <input type="text" id="hdlId" name="hdlc" value="00"><br>
+  </div>
+  <div style="padding:20px;">
+  <label for="Ldl"><b>Enter LDL <small>(in mg/dL):</small></b> </label>
+  <input type="text" id="ldlId" name="ldlc" value="00"><br>
+  </div>
+  <div style="padding:20px;">
+  <label for="Tcl"><b>Enter Total Cholostrol <small>(in mg/dL):</small></b> </label>
+  <input type="text" id="tclId" name="tclvalue" value="00"><br>
+  </div>
+  <div style="padding:20px;">
+  <label for="A1c"><b>Enter Hemoglobin A1c/Hemoglobin <small>(in %):</small></b> </label>
+  <input type="text" id="a1cId" name="A1cvalue" value="00"><br>
+  </div>
+  <div style="padding:20px;">
+  <label for="Creatinine"><b>Enter Creatinine <small>(in mg/dL):</small></b> </label>
+  <input type="text" id="creId" name="Creatininevalue" value="00"><br>
+  </div>
+  <input type="submit" id="predB" name="PredictWeight" value="Predict Weight">
+  <div style="padding:20px;">
+  <label for="PredWeight"><b>The Predicted Weight <small>(in Kg):</small></b> </label>
+  <label id="PredValue"></label>
+  </div>
+
+  <h2>This Model is close to Accurate when the predicted weight is above 80Kg</h2>
+  <img src="fitness.jpg" alt="Model fitness" width="460" height="345">
+
+  <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="test_childprocess.js"></script>
+
+  </body>
+
+
+
+</html>
